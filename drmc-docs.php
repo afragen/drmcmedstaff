@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: DRMC Document List Template
+ * Template Name: Document List Template
  * Description: A Page Template that showcases Sticky Posts, Asides, and Blog Posts
  *
  * The showcase template in Twenty Eleven consists of a featured posts section using sticky posts,
