@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: DRMC Document List Template
+ * Template Name: DRMC Credentialing Document List Template
  * Description: A Page Template that showcases Sticky Posts, Asides, and Blog Posts
  *
  * The showcase template in Twenty Eleven consists of a featured posts section using sticky posts,
@@ -169,7 +169,7 @@ get_header(); ?>
 
 <!-- ******* -->
 <?php
-$default_dir = "/medstaff-docs/"; // lists files only for the directory which this script is run from
+$default_dir = "/medstaff-docs/drmc-credentialing/"; // lists files only for the directory which this script is run from
 
 function file_ext_strip($filename) {
     return preg_replace('/\.[^.]*$/', '', $filename);
@@ -178,13 +178,13 @@ function file_ext_strip($filename) {
 function file_replace_spacer($filename) {
 	return preg_replace('/[_-]+/', ' ', $filename);
 }
-	
+
 function list_directory($dir) {
 	$narray=array();
 
 	$dir_handle = @opendir($dir) or die("Unable to open $dir");
 	$i=0;
-	$skip_files = array(".", "..", ".htaccess", "index.php", "drmc-credentialing");
+	$skip_files = array(".", "..", ".htaccess", "index.php");
 	//while($file = readdir($dir_handle)) {
 	while (false !== ($file = readdir($dir_handle))) {
 		if(!in_array($file, $skip_files)) {
