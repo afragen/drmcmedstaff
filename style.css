@@ -1,12 +1,27 @@
 /*
-Theme Name: DRMCMedStaff Child
+Theme Name: DRMCMedStaff
 Theme URI: http://drmcmedstaff.org
 Description: Child Theme for twentyeleven. 
-
 Author: afragen
 Author URI: http://drmcmedstaff.org
 Template: twentyeleven
-Version: 0.1
+Version: 0.2
 */
  
 @import url("../twentyeleven/style.css");
+
+#content table>tbody>tr>td {
+	vertical-align: middle;
+	font-size: 0.8em;
+}
+
+#content img {
+	display: block;
+	position: relative;
+	background-color: #fff;
+	border: 1px solid #a9a9a9;
+	margin: -6px 6px 6px 6px;
+	padding: 4px;
+	-moz-box-shadow: 3px 3px 3px #666;
+	-webkit-box-shadow: 3px 3px 3px #666;  
+}
