@@ -6,7 +6,7 @@ Description: Child Theme for twentyeleven.
 Author: afragen
 Author URI: http://drmcmedstaff.org
 Template: twentyeleven
-Version: 0.7.3
+Version: 0.7.4
 */
  
 @import url("../twentyeleven/style.css");
@@ -30,22 +30,24 @@ Version: 0.7.3
 
 /* iPad [portrait + landscape] and iPhone [portrait + landscape] */
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
-  /* header#branding nav#access a { padding: 9px; } */
+	/* header#branding nav#access a { padding: 9px; } */
 }
 
 
 /* iPad [portrait + landscape] */
 @media only screen and (device-width: 768px) {
-  /* #branding, .header_logo, .header_logo:after { border: none;} */
-  #content code, #content pre { font-size: 0.6em; }
-  /* table { font-size: 1.5em; } */
+	/* #branding, .header_logo, .header_logo:after { border: none;} */
+	#content code, #content pre { font-size: 0.6em; }
+	/* table { font-size: 1.5em; } */
 }
 
 
 /* iPhone [portrait + landscape] */
 @media only screen and (max-device-width: 480px) {
-/*#content code { font-size: 0.6em; }*/
-  hgroup { display: none; }
-/* #branding { padding-bottom: 0; max-width: 480px; min-width: 340px; } */
-  #content img { width: 75%; }
+	/*#content code { font-size: 0.6em; }*/
+	hgroup { display: none; }
+	/* #branding { padding-bottom: 0; max-width: 480px; min-width: 340px; } */
+	#content td img { width: 75%; }
+	header { font-size: 0.5em;}
+	.singular.page .hentry { padding: 0;}
 }
