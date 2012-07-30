@@ -6,7 +6,7 @@ Description: Child Theme for twentyeleven.
 Author: afragen
 Author URI: http://drmcmedstaff.org
 Template: twentyeleven
-Version: 0.7.6
+Version: 0.7.7
 */
  
 @import url("../twentyeleven/style.css");
@@ -47,7 +47,7 @@ Version: 0.7.6
 	/*#content code { font-size: 0.6em; }*/
 	hgroup { display: none; }
 	/* #branding { padding-bottom: 0; max-width: 480px; min-width: 340px; } */
-	#content td img { width: 75%; height: 75%; }
-	header { font-size: 0.5em;}
-	.singular.page .hentry { padding: 0;}
+	#content td>img { max-width: 75% }
+	/* header { font-size: 0.5em;} */
+	#main, .singular.page .hentry { padding: 0;}
 }
