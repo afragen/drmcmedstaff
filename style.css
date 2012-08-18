@@ -6,7 +6,7 @@ Description: Child Theme for twentyeleven.
 Author: afragen
 Author URI: http://drmcmedstaff.org
 Template: twentyeleven
-Version: 0.9.2
+Version: 0.9.3
 */
  
 @import url("../twentyeleven/style.css");
@@ -54,5 +54,5 @@ Version: 0.9.2
 	.singular h1.entry-title { font-size: 24px; }
 	.singular .entry-title { line-height: 1em; }
 	#access a { line-height: 2em; }
-	#site-generator { padding: 1.5em 0.5em; }
+	#site-generator { padding: 1em 0.5em; }
 }

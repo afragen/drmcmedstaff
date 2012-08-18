@@ -178,6 +178,10 @@ function file_ext_strip($filename) {
 function file_replace_spacer($filename) {
 	return preg_replace('/[_-]+/', ' ', $filename);
 }
+
+function file_title_case($filename) {
+	return ucwords($filename);
+}
 	
 function list_directory($dir) {
 	$narray=array();
@@ -204,6 +208,7 @@ for($i=0; $i<sizeof($directory_array); $i++) {
 	$fn = $directory_array[$i];
 	$fn = file_ext_strip($fn);
 	$fn = file_replace_spacer($fn);
+	$fn = file_title_case($fn);
 	echo "<li><a href=".chr(34) . content_url() . $default_dir . $directory_array[$i] .chr(34). ">" . $fn . "</a></li>\r\n\t";
 }
 echo '</ul>' . "\r\n\t";
