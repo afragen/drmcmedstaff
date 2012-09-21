@@ -14,3 +14,8 @@ ul.upcoming {
 }
 .dig-in { text-align: center; }
 
+/* iPhone [portrait + landscape] */
+@media only screen and (max-device-width: 480px) {
+	body { min-width: 550px; }
+	.tribe-events-thismonth, .tribe-events-othermonth { min-width: 50px; max-width:60px;}
+}
