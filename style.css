@@ -5,11 +5,11 @@ Github Theme URI: https://github.com/afragen/drmcmedstaff
 Description: Child Theme for twentyeleven. 
 Author: afragen
 Author URI: http://drmcmedstaff.org
-Template: twentyeleven
-Version: 0.9.9
+Template: twentytwelve
+Version: 1.0
 */
  
-@import url("../twentyeleven/style.css");
+@import url("../twentytwelve/style.css");
 
 #content table>tbody>tr>td, #content table>tbody>tr>td>img {
 	vertical-align: middle;
@@ -28,7 +28,7 @@ Version: 0.9.9
 }
 
 /* MEC images, cropped then scaled to 2x3 inches */
-#content td>img { max-width: 100px; }
+#content td>img { max-width: 100px; float: right; }
 #content table, #content td { border: none; }
 #content th { font-size: 1em; }
 
