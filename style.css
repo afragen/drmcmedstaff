@@ -55,6 +55,7 @@ Version: 1.0.1
 /* iPhone [portrait + landscape] */
 @media only screen and (max-device-width: 480px) {
 	body { min-width: 550px; }
+	/*
 	#main, .singular.page .hentry { padding: 0;}
 	.singular h1.entry-title { font-size: 24px; }
 	.singular .entry-title { line-height: 1em; }
@@ -63,6 +64,7 @@ Version: 1.0.1
 	hgroup { display: none; }
 	#content td>img { max-width: 75px; }
 	.entry-content p { padding: 1em; }
+	*/
 }
 
 /* iPhone 5 or iPod Touch 5th generation styles */
