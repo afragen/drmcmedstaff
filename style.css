@@ -6,7 +6,7 @@ Description: Child Theme for twentytwelve.
 Author: afragen
 Author URI: http://drmcmedstaff.org
 Template: twentytwelve
-Version: 1.0.6
+Version: 1.0.7
 */
  
 @import url("../twentytwelve/style.css");
@@ -36,6 +36,8 @@ Version: 1.0.6
 #content table, #content td { border: none; }
 #content th { font-size: 1em; }
 
+.drmc-insert { color: 009900; text-decoration: underline; }
+.drmc-delete { color: #d80000; text-decoration: line-through; }
 
 /* iPad [portrait + landscape] and iPhone [portrait + landscape] */
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
