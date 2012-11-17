@@ -38,6 +38,7 @@ Version: 1.0.8
 
 .des-insert { color: #009900; text-decoration: underline; }
 .des-delete { color: #d80000; text-decoration: line-through; }
+.bns-login { padding-bottom: 1em; }
 
 /* iPad [portrait + landscape] and iPhone [portrait + landscape] */
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
