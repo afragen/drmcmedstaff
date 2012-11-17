@@ -6,4 +6,15 @@ function drmc_username() {
 	echo $html;
 }
 
+//http://nathany.com/redirecting-wordpress-subscribers
+function change_login_redirect($redirect_to, $request_redirect_to, $user) {
+  if (is_a($user, 'WP_User') && $user->has_cap('edit_posts') === false) {
+    return get_bloginfo('siteurl');
+  }
+  return $redirect_to;
+}
+// add filter with default priority (10), filter takes (3) parameters
+add_filter('login_redirect','change_login_redirect', 10, 3);
+
+
 ?>
