@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Elections Template
+ * Template Name: Departmental Elections Template
  *
  * Description: Twenty Twelve loves the no-sidebar look as much as
  * you do. Use this page template to remove the sidebar from any page.
@@ -14,13 +14,15 @@
  * @since Twenty Twelve 1.0
 */
 
+$drmcmedstaff = new DRMCMedStaff();
+$terms = $drmcmedstaff::get_department();
 $args = array(
 	'post_type' => 'drmc_voting',
 	'tax_query' => array(
 		array(
 			'taxonomy' => 'department',
 			'field' => 'slug',
-			'terms' => array( 'medical-staff' )
+			'terms' => $terms
 			)
 		)
 );
@@ -42,7 +44,12 @@ get_header(); ?>
 			<?php while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
 
 				<?php get_template_part( 'content', 'page' ); ?>
-			 
+				<?php 
+					global $withcomments;
+					$withcomments = true; 
+					comments_template();
+				?>
+		 
 			<?php endwhile; // end of the loop. ?>
 
 
