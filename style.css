@@ -6,7 +6,7 @@ Description: Child Theme for twentytwelve.
 Author: afragen
 Author URI: http://drmcmedstaff.org
 Template: twentytwelve
-Version: 1.1.1
+Version: 1.1.2
 */
  
 @import url("../twentytwelve/style.css");
@@ -43,7 +43,7 @@ Version: 1.1.1
 /* Comment Styling */
 h2.comments-title { margin: 0; }
 section.comment-content { margin-left: 2em; }
-.comments-area article header { margin-bottom: 10px; }
+.comments-area article header { margin-bottom: 20px; overflow: visible; }
 #respond { margin:0 }
 
 /* iPad [portrait + landscape] and iPhone [portrait + landscape] */
