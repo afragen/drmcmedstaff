@@ -1,6 +1,7 @@
 <?php
-//$default_dir = "/medstaff-docs/"; // lists files only for the directory which this script is run from
-//$default_dir is now passed variable when this file is call using locate_template( 'list-files.php' );
+// lists files only for the directory which this script is run from
+//$default_dir = "/medstaff-docs/"; 
+//$default_dir is now passed variable when this file is call using include(locate_template( './templates/list-files.php' ));
 
 function file_ext_strip($filename) {
     return preg_replace('/\.[^.]*$/', '', $filename);

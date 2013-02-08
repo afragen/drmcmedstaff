@@ -24,9 +24,8 @@ get_header(); ?>
 			<?php endwhile; // end of the loop. ?>
 
 
-
-<?php $default_dir = "/medstaff-docs/drmc-credentialing/"; ?>// lists files only for the directory which this script is run from
-<?php locate_template( 'list-files.php' ); ?>
+<?php $default_dir = "/medstaff-docs/drmc-credentialing/"; ?>
+<?php locate_template( './templates/list-files.php' ); ?>
 
 
 			</div><!-- #content -->
