@@ -14,7 +14,7 @@
  * @since Twenty Twelve 1.0
 */
 
-$drmcmedstaff = new DRMCMedStaff();
+$drmcmedstaff = new DRMC_Med_Staff();
 $terms = $drmcmedstaff::get_department();
 $args = array(
 	'post_type' => 'drmc_voting',
