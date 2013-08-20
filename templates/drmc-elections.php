@@ -19,9 +19,15 @@ $args = array(
 	'tax_query' => array(
 		array(
 			'taxonomy' => 'department',
-			'field' => 'slug',
-			'terms' => array( 'medical-staff' )
-			)
+			'field'    => 'slug',
+			'terms'    => array( 'medical-staff' )
+			),
+		array(
+			'taxonomy' => 'department',
+			'field'    => 'slug',
+			'terms'    => array( 'voting-over' ),
+			'operator' => 'NOT IN',
+			),
 		)
 );
 

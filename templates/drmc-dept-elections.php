@@ -21,9 +21,15 @@ $args = array(
 	'tax_query' => array(
 		array(
 			'taxonomy' => 'department',
-			'field' => 'slug',
-			'terms' => $terms
-			)
+			'field'    => 'slug',
+			'terms'    => $terms,
+			),
+		array(
+			'taxonomy' => 'department',
+			'field'    => 'slug',
+			'terms'    => array( 'voting-over' ),
+			'operator' => 'NOT IN',
+			),
 		)
 );
 
