@@ -1,12 +1,13 @@
 /*
-Theme Name: DRMCMedStaff
-Theme URI: http://drmcmedstaff.org
-Github Theme URI: afragen/drmcmedstaff
-Description: Child Theme for twentytwelve. 
-Author: afragen
-Author URI: http://drmcmedstaff.org
-Template: twentytwelve
-Version: 1.3.7
+Theme Name:       DRMCMedStaff
+Theme URI:        http://drmcmedstaff.org
+Description:      Child Theme for twentytwelve. 
+Author:           afragen
+Author URI:       http://drmcmedstaff.org
+Template:         twentytwelve
+Version:          1.3.8
+Github Theme URI: https://github.com/afragen/drmcmedstaff
+GitHub Branch:    master
 */
  
 @import url("../twentytwelve/style.css");
