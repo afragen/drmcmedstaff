@@ -5,7 +5,7 @@ Description:      Child Theme for twentytwelve.
 Author:           afragen
 Author URI:       http://drmcmedstaff.org
 Template:         twentytwelve
-Version:          1.3.14
+Version:          1.3.15
 Github Theme URI: https://github.com/afragen/drmcmedstaff
 GitHub Branch:    develop
 */
@@ -37,7 +37,7 @@ GitHub Branch:    develop
 #content table, #content td { border: none; }
 #content th { font-size: 1em; }
 
-.des-insert { color: #009900; text-decoration: underline; }
+.des-insert { color: #0000ff; text-decoration: underline; }
 .des-delete { color: #d80000; text-decoration: line-through; }
 .bns-login { padding-bottom: 1em; }
 

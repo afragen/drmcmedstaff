@@ -41,7 +41,7 @@ get_header(); ?>
 			<h2>Items for voting - <?php echo ucwords($terms[0]); ?></h2>
 			<p>Once cast, <strong>your vote cannot be changed</strong>.</p>
 
-			<p>Changes and such will have the following styling. Additions will be <span class="des-insert">green and underlined</span>. Deletions will be <span class="des-delete">red and strike-through</span>.</p>
+			<p>Changes and such will have the following styling. Additions will be <span class="des-insert">blue and underlined</span>. Deletions will be <span class="des-delete">red and strike-through</span>.</p>
 			</div>
 			<?php
 				$my_query = new WP_Query( $args );
