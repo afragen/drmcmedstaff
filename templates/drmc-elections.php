@@ -47,6 +47,11 @@ get_header(); ?>
 
 			<?php while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
 
+				<?php if ( ! current_user_can( 'can_vote' ) ) : ?>
+					<h2>You don't have sufficient privileges to view this page or vote.</h2><br />
+					<?php continue; ?>
+				<?php endif; ?>
+
 				<?php get_template_part( 'content', 'page' ); ?>
 				<?php 
 					global $withcomments;
