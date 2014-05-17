@@ -41,9 +41,7 @@ get_header(); ?>
 
 			<p>Changes and such will have the following styling. Additions will be <span class="des-insert">blue and underlined</span>. Deletions will be <span class="des-delete">red and strike-through</span>.</p>
 			</div>
-			<?php
-				$my_query = new WP_Query( $args );
-			?>
+			<?php $my_query = new WP_Query( $args ); ?>
 
 			<?php while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
 
