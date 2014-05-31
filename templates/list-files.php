@@ -21,8 +21,8 @@ function list_directory( $dir ) {
 	$i          = 0;
 	$skip_files = array( ".", "..", ".htaccess", "index.php", "drmc-credentialing" );
 
-	while (false !== ( $file = readdir($dir_handle ) ) ) {
-		if( ! in_array( $file, $skip_files ) ) {
+	while( false !== ( $file = readdir( $dir_handle ) ) ) {
+		if ( ! in_array( $file, $skip_files ) ) {
 			$narray[ $i ] = $file;
 			$i++;
 		}
@@ -35,11 +35,11 @@ function list_directory( $dir ) {
 // print out html
 echo "\t" . '<ul>' . "\r\n\t";
 $directory_array = list_directory( WP_CONTENT_DIR . $default_dir );
-for( $i = 0; $i < sizeof( $directory_array ); $i++ ) {
-	$fn = $directory_array[ $i ];
+foreach ( $directory_array as $fn ) {
+	$fn_ext = $fn;
 	$fn = file_ext_strip( $fn );
 	$fn = file_replace_spacer( $fn );
 	$fn = file_title_case( $fn );
-	echo "<li><a href=" . chr(34) . content_url() . $default_dir . $directory_array[ $i ] .chr(34). ">" . $fn . "</a></li>\r\n\t";
+	echo "<li><a href=" . chr(34) . content_url() . $default_dir . $fn_ext .chr(34). ">" . $fn . "</a></li>\r\n\t";
 }
 echo '</ul>' . "\r\n\t";
