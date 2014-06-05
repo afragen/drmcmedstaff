@@ -27,14 +27,15 @@ function list_directory( $dir ) {
 			$i++;
 		}
 	}
+	closedir( $dir_handle ); //closing the directory
 	natcasesort( $narray ); // case-insensitive sort
 	return $narray;
-	closedir( $dir_handle ); //closing the directory
 }
 
 // print out html
 echo "\t" . '<ul>' . "\r\n\t";
 $directory_array = list_directory( WP_CONTENT_DIR . $default_dir );
+
 foreach ( $directory_array as $fn ) {
 	$fn_ext = $fn;
 	$fn = file_ext_strip( $fn );
@@ -42,4 +43,5 @@ foreach ( $directory_array as $fn ) {
 	$fn = file_title_case( $fn );
 	echo "<li><a href=" . chr(34) . content_url() . $default_dir . $fn_ext .chr(34). ">" . $fn . "</a></li>\r\n\t";
 }
+
 echo '</ul>' . "\r\n\t";
