@@ -5,12 +5,18 @@ Description:      Child Theme for twentytwelve.
 Author:           afragen
 Author URI:       http://drmcmedstaff.org
 Template:         twentytwelve
-Version:          1.3.20
+Version:          1.3.21
 Github Theme URI: https://github.com/afragen/drmcmedstaff
 GitHub Branch:    develop
 */
  
 @import url("../twentytwelve/style.css");
+
+/* Spacing in Med Staff Leadership table */
+#content table>tbody>tr>td, #content table>tbody>tr>td>img {
+	vertical-align: middle;
+	font-size: 0.8em;
+}
 
 /* Spacing for Document listing */
 #content li { padding: 0.4em; }
