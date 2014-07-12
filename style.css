@@ -5,40 +5,17 @@ Description:      Child Theme for twentytwelve.
 Author:           afragen
 Author URI:       http://drmcmedstaff.org
 Template:         twentytwelve
-Version:          1.3.19
+Version:          1.3.20
 Github Theme URI: https://github.com/afragen/drmcmedstaff
 GitHub Branch:    develop
 */
  
 @import url("../twentytwelve/style.css");
 
-#content table>tbody>tr>td, #content table>tbody>tr>td>img {
-	vertical-align: middle;
-	font-size: 0.8em;
-}
-
-#content img {
-	display: block;
-	position: relative;
-	background-color: #fff;
-	border: 1px solid #a9a9a9;
-	margin: -6px 6px 6px 6px;
-	padding: 4px;
-	-moz-box-shadow: 3px 3px 3px #666;
-	-webkit-box-shadow: 3px 3px 3px #666;  
-}
-
 /* Spacing for Document listing */
 #content li { padding: 0.4em; }
 #content ul { width:400px; margin-right:auto; margin-left:auto; }
 
-/* MEC images, cropped then scaled to 2x3 inches */
-#content td>img { max-width: 100px; float: right; }
-#content table, #content td { border: none; }
-#content th { font-size: 1em; }
-
-.des-insert { color: #0000ff; text-decoration: underline; }
-.des-delete { color: #d80000; text-decoration: line-through; }
 .bns-login { padding-bottom: 1em; }
 
 /* Comment Styling */
@@ -46,52 +23,3 @@ h2.comments-title { margin: 0; }
 section.comment-content { margin-left: 2em; }
 .comments-area article header { margin-bottom: 20px; overflow: visible; }
 #respond { margin:0 }
-
-/* Highlight Voting menu */
-li.drmc-highlight-menu > a,
-li.drmc-highlight-menu > a:hover,
-.main-navigation li.drmc-highlight-menu.current-menu-ancestor > a {
-	color: #f00;
-}
-
-/* hide immediate poll results */
-.wp-polls .wp-polls-ans .wp-polls-ul { display:none; }
-/* show polls not yet voted upon */
-.wp-polls form.wp-polls-form .wp-polls-ans .wp-polls-ul { display:block; }
-/* show pollsarchive */
-.wp-polls.wp-polls-archive .wp-polls-ans .wp-polls-ul { display:block; }
-
-/* iPad [portrait + landscape] and iPhone [portrait + landscape] */
-@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
-	/* header#branding nav#access a { padding: 9px; } */
-	footer#colophon { height: 1.5em }
-}
-
-
-/* iPad [portrait + landscape] */
-@media only screen and (device-width: 768px) {
-	/* #branding, .header_logo, .header_logo:after { border: none;} */
-	#content code, #content pre { font-size: 0.6em; }
-	/* table { font-size: 1.5em; } */
-}
-
-
-/* iPhone [portrait + landscape] */
-@media only screen and (max-device-width: 480px) {
-	/*
-	body { min-width: 550px; }
-	#main, .singular.page .hentry { padding: 0;}
-	.singular h1.entry-title { font-size: 24px; }
-	.singular .entry-title { line-height: 1em; }
-	#access a { line-height: 2em; }
-	#site-generator { padding: 1em 0.5em; }
-	hgroup { display: none; }
-	*/
-	#content td>img { max-width: 75px; }
-	.entry-content p { padding: 1em; }
-}
-
-/* iPhone 5 or iPod Touch 5th generation styles */
-@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-
-}
