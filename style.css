@@ -1,36 +1,46 @@
 /*
 Theme Name:       DRMCMedStaff
 Theme URI:        http://drmcmedstaff.org
-Description:      Child Theme for twentytwelve. 
+Description:      Child Theme for Ryu. 
 Author:           afragen
 Author URI:       http://drmcmedstaff.org
-Template:         twentytwelve
-Version:          1.3.22
+Template:         ryu
+Version:          1.4.0
 Github Theme URI: https://github.com/afragen/drmcmedstaff
 GitHub Branch:    develop
 */
  
-@import url("../twentytwelve/style.css");
+@import url("../ryu/style.css");
+
+.des-insert { color: #0000ff; text-decoration: underline; }
+.des-delete { color: #d80000; text-decoration: line-through; }
 
 /* MEC images, cropped then scaled to 2x3 inches */
-#content td>img { max-width: 100px; float: right; }
+#content td>img { max-width: 100px; }
 #content table, #content td { border: none; }
 #content th { font-size: 1em; }
 
-/* Spacing in Med Staff Leadership table */
-#content table>tbody>tr>td, #content table>tbody>tr>td>img {
+/* Spacing for names in Med Staff Leadership table */
+tbody tr>td, tbody tr>td>img {
 	vertical-align: middle;
-	font-size: 0.8em;
+	font-size: 0.6em;
 }
 
 /* Spacing for Document listing */
 #content li { padding: 0.4em; }
-#content ul { width:400px; margin-right:auto; margin-left:auto; }
+#content ul { width: 600px; margin-right:  auto; margin-left:auto; list-style: none; }
 
 .bns-login { padding-bottom: 1em; }
 
-/* Comment Styling */
+/* Changes for Ryu theme */
+h1.entry-title { font-size: 1.5em; }
+.toppanel { background-color: #666; }
+.entry-content th { border: none; }
+
+/* Comment Styling for TwentyTwelve */
+/*
 h2.comments-title { margin: 0; }
 section.comment-content { margin-left: 2em; }
 .comments-area article header { margin-bottom: 20px; overflow: visible; }
 #respond { margin:0 }
+*/

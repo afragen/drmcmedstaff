@@ -37,8 +37,13 @@ get_header(); ?>
 
 		<div id="primary">
 			<div id="content" role="main">
+
+			<article class="hentry">
+			<div class="entry-class wrap clear">
+			<header class="entry-header">
+				<h1 class="entry-title">Items for voting - <?php echo ucwords( $terms[0] ); ?></h1>
+			</header>
 			<div class="entry-content">
-			<h2>Items for voting - <?php echo ucwords( $terms[0] ); ?></h2>
 			<p>Once cast, <strong>your vote cannot be changed</strong>.</p>
 
 			<p>Changes and such will have the following styling. Additions will be <span class="des-insert">blue and underlined</span>. Deletions will be <span class="des-delete">red and strike-through</span>.</p>
@@ -56,6 +61,9 @@ get_header(); ?>
 		 
 			<?php endwhile; // end of the loop. ?>
 
+
+			</div><!-- .entry-class -->
+			</article>
 
 			</div><!-- #content -->
 		</div><!-- #primary -->

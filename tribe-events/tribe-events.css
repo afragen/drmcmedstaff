@@ -1,11 +1,5 @@
 /* The Events Calendar */
 
-/* 
-.tribe-events-calendar-buttons a { margin: 50px 0 0 10px; }
-.tribe-events-month-nav { margin-top: 20px; padding-top: 10px;}
-table.tribe-events-calendar { margin-top: 3em !important; }
-#tribe-events-calendar-header {  }
- */
 
 li.tribe-events-adv-list-widget ol li {
   font-size: 0.8em;
@@ -16,3 +10,7 @@ li.tribe-events-adv-list-widget ol li {
 .tribe-events-widget-link { text-align: center; }
 
 table.tribe-events-calendar { background-color: #fff; }
+
+/* Adjustments for Ryu theme */
+h4.entry-title.summary { font-size: 1.25em; }
+.tribe-bar-views-list { font: 15px sans-serif ; }
