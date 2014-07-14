@@ -5,7 +5,7 @@ Description:      Child Theme for Ryu.
 Author:           afragen
 Author URI:       http://drmcmedstaff.org
 Template:         ryu
-Version:          1.4.0
+Version:          1.4.1
 Github Theme URI: https://github.com/afragen/drmcmedstaff
 GitHub Branch:    develop
 */
@@ -44,3 +44,13 @@ section.comment-content { margin-left: 2em; }
 .comments-area article header { margin-bottom: 20px; overflow: visible; }
 #respond { margin:0 }
 */
+
+/*iPhone < 5:*/
+@media screen and (device-aspect-ratio: 2/3) {
+	#content ul { width: 300px; }
+}
+ 
+/*iPhone 5:*/
+@media screen and (device-aspect-ratio: 40/71) {
+	#content ul { width: 300px; }
+}
