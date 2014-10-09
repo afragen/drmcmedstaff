@@ -5,7 +5,7 @@ Description:      Child Theme for Ryu.
 Author:           afragen
 Author URI:       http://drmcmedstaff.org
 Template:         ryu
-Version:          1.4.2
+Version:          1.4.3
 Github Theme URI: https://github.com/afragen/drmcmedstaff
 GitHub Branch:    develop
 */
@@ -36,6 +36,7 @@ tbody tr>td, tbody tr>td>img {
 h1.entry-title { font-size: 1.5em; }
 .toppanel { background-color: #666; }
 .entry-content th { border: none; }
+div.edd_download_excerpt { font-size: 0.7em; }
 
 /* Comment Styling for TwentyTwelve */
 /*
