@@ -41,7 +41,7 @@ foreach ( $directory_array as $fn ) {
 	$fn = file_ext_strip( $fn );
 	$fn = file_replace_spacer( $fn );
 	$fn = file_title_case( $fn );
-	echo "<li><a href=" . chr(34) . content_url() . $default_dir . $fn_ext .chr(34). ">" . $fn . "</a></li>\r\n\t";
+	echo "<li><a href=" . chr(34) . content_url() . $default_dir . $fn_ext . chr(34) . ">" . $fn . "</a></li>\r\n\t";
 }
 
 echo '</ul>' . "\r\n\t";
