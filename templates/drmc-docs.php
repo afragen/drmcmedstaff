@@ -25,7 +25,7 @@ get_header(); ?>
 
 
 <?php $default_dir = "/medstaff-docs/"; ?>
-<?php include(locate_template('./templates/list-files.php')); ?>
+<?php include( locate_template( './templates/list-files.php' ) ); ?>
 
 			</div><!-- #content -->
 		</div><!-- #primary -->
