@@ -5,12 +5,11 @@ Description:      Child Theme for Ryu.
 Author:           afragen
 Author URI:       http://drmcmedstaff.org
 Template:         ryu
-Version:          1.4.3
+Version:          1.4.4
 Github Theme URI: https://github.com/afragen/drmcmedstaff
 GitHub Branch:    develop
 */
  
-@import url("../ryu/style.css");
 
 .des-insert { color: #0000ff; text-decoration: underline; }
 .des-delete { color: #d80000; text-decoration: line-through; }
