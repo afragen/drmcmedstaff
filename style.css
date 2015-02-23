@@ -5,12 +5,11 @@ Description:      Child Theme for Ryu.
 Author:           afragen
 Author URI:       http://drmcmedstaff.org
 Template:         ryu
-Version:          1.4.3
+Version:          1.4.8
 Github Theme URI: https://github.com/afragen/drmcmedstaff
 GitHub Branch:    master
 */
  
-@import url("../ryu/style.css");
 
 .des-insert { color: #0000ff; text-decoration: underline; }
 .des-delete { color: #d80000; text-decoration: line-through; }
@@ -36,7 +35,11 @@ tbody tr>td, tbody tr>td>img {
 h1.entry-title { font-size: 1.5em; }
 .toppanel { background-color: #666; }
 .entry-content th { border: none; }
-div.edd_download_excerpt { font-size: 0.7em; }
+/* EDD adjustments for Ryu */
+.edd_download_title { font-size: 1.5em; }
+div.edd_download_excerpt, .edd_price_option_name, .edd_price_option_price {
+	font-size: 0.75em;
+}
 
 /* Comment Styling for TwentyTwelve */
 /*
