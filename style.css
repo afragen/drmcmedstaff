@@ -5,7 +5,7 @@ Description:      Child Theme for Ryu.
 Author:           afragen
 Author URI:       http://drmcmedstaff.org
 Template:         ryu
-Version:          1.5.1
+Version:          1.5.2
 Github Theme URI: https://github.com/afragen/drmcmedstaff
 GitHub Branch:    develop
 Requires PHP:     5.3
@@ -31,6 +31,13 @@ tbody tr>td, tbody tr>td>img {
 #content ul { width: 600px; margin-right:  auto; margin-left:auto; list-style: none; }
 
 .bns-login { padding-bottom: 1em; }
+
+/* Highlight Voting menu */
+li.drmc-highlight-menu > a,
+li.drmc-highlight-menu > a:hover,
+.main-navigation li.drmc-highlight-menu.current-menu-ancestor > a {
+	color: #f00;
+}
 
 /* Changes for Ryu theme */
 h1.entry-title { font-size: 1.5em; }
