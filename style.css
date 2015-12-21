@@ -93,3 +93,5 @@ img.wp-smiley, img.header-image {
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 }
+
+footer nav { display: none; }
