@@ -1,4 +1,4 @@
-<?php //silence is golden
+<?php
 
 add_action( 'wp_enqueue_scripts', 'enqueue_child_theme_styles', 99 );
 function enqueue_child_theme_styles() {

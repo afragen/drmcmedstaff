@@ -1,7 +1,7 @@
 DRMCMedStaff.org Child Theme
 ============================
 
-Child theme for drmcmedstaff.org based on Ryu theme.
+Child theme for drmcmedstaff.org based on TwentySixteen theme.
 
 Custom list-files.php to list documents in a specified directory.
 
