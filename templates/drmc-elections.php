@@ -50,10 +50,10 @@ get_header(); ?>
 
 			<?php while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
 
-				<?php get_template_part( 'content', 'page' ); ?>
-				<?php 
+				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+				<?php
 					global $withcomments;
-					$withcomments = true; 
+					$withcomments = true;
 					comments_template();
 				?>
 
