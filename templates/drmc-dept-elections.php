@@ -16,23 +16,23 @@
 
 use Fragen\DRMC;
 
-$terms        = Fragen\DRMC\Base::get_department();
-$args         = array(
-					'post_type' => 'drmc_voting',
-					'tax_query' => array(
-						array(
-							'taxonomy' => 'department',
-							'field'    => 'slug',
-							'terms'    => $terms,
-						),
-						array(
-							'taxonomy' => 'department',
-							'field'    => 'slug',
-							'terms'    => array( 'voting-over' ),
-							'operator' => 'NOT IN',
-						),
-					)
-				);
+$terms = Fragen\DRMC\Base::get_department();
+$args  = array(
+	'post_type' => 'drmc_voting',
+	'tax_query' => array(
+		array(
+			'taxonomy' => 'department',
+			'field'    => 'slug',
+			'terms'    => $terms,
+			),
+		array(
+			'taxonomy' => 'department',
+			'field'    => 'slug',
+			'terms'    => array( 'voting-over', 'medical-staff' ),
+			'operator' => 'NOT IN',
+			),
+		),
+	);
 
 get_header(); ?>
 
@@ -49,9 +49,8 @@ get_header(); ?>
 
 			<p>Changes and such will have the following styling. Additions will be <span class="des-insert">blue and underlined</span>. Deletions will be <span class="des-delete">red and strike-through</span>.</p>
 			</div>
-			<?php $my_query = new \WP_Query( $args ); ?>
-
-			<?php while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
+				<?php $my_query = new \WP_Query( $args ); ?>
+				<?php while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 				<?php
@@ -59,9 +58,12 @@ get_header(); ?>
 					$withcomments = true;
 					comments_template();
 				?>
+				<?php endwhile; // end of the loop. ?>
 
-			<?php endwhile; // end of the loop. ?>
-
+				<?php if ( empty( $my_query->posts ) ): ?>
+					<?php get_template_part( 'template-parts/content', 'page' ); ?>
+					<?php echo 'There are no current items for voting.'; ?>
+				<?php endif; ?>
 
 			</div><!-- .entry-class -->
 			</article>
