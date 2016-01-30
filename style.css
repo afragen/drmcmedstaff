@@ -5,7 +5,7 @@ Description:      Child Theme for TwentySixteen.
 Author:           Andy Fragen
 Author URI:       https://github.com/afragen/
 Template:         twentysixteen
-Version:          1.5.6
+Version:          1.5.7
 Github Theme URI: https://github.com/afragen/drmcmedstaff
 GitHub Branch:    develop
 Requires PHP:     5.3
@@ -27,8 +27,17 @@ tbody tr>td, tbody tr>td>img {
 }
 
 /* Spacing for Document listing */
-#content li { padding: 0.4em; }
-#content ul { width: 600px; margin-right:  auto; margin-left:auto; list-style: none; }
+#content li {
+	padding: 0.4em;
+	padding-left: 1em;
+}
+#content ul {
+	width: auto;
+	margin-right: auto;
+	margin-left: auto;
+	list-style: disc;
+	list-style-position: inside;
+}
 
 .bns-login { padding-bottom: 1em; }
 
