@@ -28,15 +28,15 @@ tbody tr>td, tbody tr>td>img {
 
 /* Spacing for Document listing */
 #content li {
-	padding: 0.4em;
-	padding-left: 1em;
+	padding: 0.25em;
+	margin-left: 1.5em;
+	list-style-position: outside;
 }
 #content ul {
 	width: auto;
 	margin-right: auto;
 	margin-left: auto;
 	list-style: disc;
-	list-style-position: inside;
 }
 
 .bns-login { padding-bottom: 1em; }
