@@ -5,7 +5,7 @@ Description:      Child Theme for TwentySixteen.
 Author:           Andy Fragen
 Author URI:       https://github.com/afragen/
 Template:         twentysixteen
-Version:          1.5.7
+Version:          1.5.8
 Github Theme URI: https://github.com/afragen/drmcmedstaff
 GitHub Branch:    develop
 Requires PHP:     5.3
@@ -104,3 +104,9 @@ img.wp-smiley, img.header-image {
 }
 
 footer nav { display: none; }
+
+/* inactivate EDD download title links */
+h3.edd_download_title a {
+	pointer-events: none;
+	cursor: default;
+}
