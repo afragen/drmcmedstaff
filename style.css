@@ -105,8 +105,10 @@ img.wp-smiley, img.header-image {
 
 footer nav { display: none; }
 
-/* inactivate EDD download title links */
+/* inactivate/normalize EDD download title links */
 h3.edd_download_title a {
 	pointer-events: none;
 	cursor: default;
+	color: #000;
+	box-shadow: none;
 }
