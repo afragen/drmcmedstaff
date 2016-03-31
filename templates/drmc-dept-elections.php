@@ -62,7 +62,7 @@ get_header(); ?>
 
 				<?php if ( empty( $my_query->posts ) ): ?>
 					<?php get_template_part( 'template-parts/content', 'page' ); ?>
-					<?php echo 'There are no current items for voting.'; ?>
+					<?php echo '<div style="text-align:center;">There are no current items for voting.</div>'; ?>
 				<?php endif; ?>
 
 			</div><!-- .entry-class -->
