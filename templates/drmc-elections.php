@@ -36,7 +36,7 @@ get_header(); ?>
 		<div id="primary">
 			<div id="content" role="main">
 
-			<article class="hentry">
+			<article class="hentry drmc_voting">
 			<div class="entry-class wrap clear">
 			<header class="entry-header">
 				<h1 class="entry-title">Items for voting</h1>
