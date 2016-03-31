@@ -14,9 +14,10 @@
  * @since Twenty Twelve 1.0
 */
 
-use Fragen\DRMC;
+namespace Fragen\DRMC;
 
-$terms = Fragen\DRMC\Base::get_department();
+$base  = Base::instance();
+$terms = $base->get_department();
 $args  = array(
 	'post_type' => 'drmc_voting',
 	'tax_query' => array(
