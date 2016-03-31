@@ -9,10 +9,10 @@
  * any active widgets from the Main Sidebar area, and the sidebar will
  * disappear everywhere.
  *
- * @package WordPress
+ * @package    WordPress
  * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
-*/
+ * @since      Twenty Twelve 1.0
+ */
 
 $args = array(
 	'post_type' => 'drmc_voting',
@@ -20,32 +20,34 @@ $args = array(
 		array(
 			'taxonomy' => 'department',
 			'field'    => 'slug',
-			'terms'    => array( 'medical-staff' )
+			'terms'    => array( 'medical-staff' ),
 		),
 		array(
 			'taxonomy' => 'department',
 			'field'    => 'slug',
 			'terms'    => array( 'voting-over' ),
 			'operator' => 'NOT IN',
-			),
 		),
-	);
+	),
+);
 
 get_header(); ?>
 
-		<div id="primary">
-			<div id="content" role="main">
+<div id="primary">
+	<div id="content" role="main">
 
-			<article class="hentry drmc_voting">
+		<article class="hentry drmc_voting">
 			<div class="entry-class wrap clear">
-			<header class="entry-header">
-				<h1 class="entry-title">Items for voting</h1>
-			</header>
-			<div class="entry-content">
-			<p>Once cast, <strong>your vote cannot be changed</strong>.</p>
+				<header class="entry-header">
+					<h1 class="entry-title">Items for voting</h1>
+				</header>
+				<div class="entry-content">
+					<p>Once cast, <strong>your vote cannot be changed</strong>.</p>
 
-			<p>Changes and such will have the following styling. Additions will be <span class="des-insert">blue and underlined</span>. Deletions will be <span class="des-delete">red and strike-through</span>.</p>
-			</div>
+					<p>Changes and such will have the following styling. Additions will be
+						<span class="des-insert">blue and underlined</span>. Deletions will be
+						<span class="des-delete">red and strike-through</span>.</p>
+				</div>
 				<?php $my_query = new \WP_Query( $args ); ?>
 
 				<?php while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
@@ -64,8 +66,8 @@ get_header(); ?>
 
 			</div><!-- .entry-class -->
 
-			</article>
-			</div><!-- #content -->
-		</div><!-- #primary -->
+		</article>
+	</div><!-- #content -->
+</div><!-- #primary -->
 
 <?php get_footer(); ?>
