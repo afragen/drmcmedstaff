@@ -46,7 +46,7 @@ get_header(); ?>
 					<h1 class="entry-title">Items for voting - <?php echo ucwords( $terms[0] ); ?></h1>
 				</header>
 				<div class="entry-content">
-					<p>Once cast, <strong>your vote cannot be changed</strong>.</p>
+					<p>Each item must be voted upon individually. Once cast, <strong>your vote cannot be changed</strong>.</p>
 
 					<p>Changes and such will have the following styling. Additions will be
 						<span class="des-insert">blue and underlined</span>. Deletions will be
