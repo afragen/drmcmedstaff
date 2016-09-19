@@ -1,6 +1,6 @@
 <?php
 // lists files only for the directory which this script is run from
-//$default_dir = "/medstaff-docs/"; 
+//$default_dir = "/medstaff-docs/";
 //$default_dir is now passed variable when this file is call using include(locate_template( './templates/list-files.php' ));
 
 function file_ext_strip( $filename ) {
@@ -14,22 +14,17 @@ function file_replace_spacer( $filename ) {
 function file_title_case( $filename ) {
 	return ucwords( $filename );
 }
-	
-function list_directory( $dir ) {
-	$narray     = array();
-	$dir_handle = @opendir( $dir ) or die( "Unable to open $dir" );
-	$i          = 0;
-	$skip_files = array( ".", "..", ".htaccess", "index.php", "drmc-credentialing" );
 
-	while( false !== ( $file = readdir( $dir_handle ) ) ) {
-		if ( ! in_array( $file, $skip_files ) ) {
-			$narray[ $i ] = $file;
-			$i++;
-		}
+function list_directory( $dir ) {
+	$dir_list = array();
+
+	// Only add .txt/.pdf files
+	foreach ( glob( $dir . "*.{txt,pdf}", GLOB_BRACE ) as $file ) {
+		array_push( $dir_list, basename( $file ) );
 	}
-	closedir( $dir_handle ); //closing the directory
-	natcasesort( $narray ); // case-insensitive sort
-	return $narray;
+	natcasesort( $dir_list ); // case-insensitive sort
+
+	return $dir_list;
 }
 
 // print out html
